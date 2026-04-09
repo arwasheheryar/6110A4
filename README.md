@@ -119,7 +119,7 @@ Pseudobulk DESeq2 analysis comparing macrophages at D05 (peak viral load) to Nai
 
 ![Figure 8](results/figures/DE_macrophages_violin_up.png)
 
-**Figure 8.** Violin plots of the top four upregulated genes in macrophages at D05 compared to Naive. Expression levels are shown for individual cells within the macrophage cluster at each timepoint.
+**Figure 8.** Violin plots of selected top upregulated genes confirmed higher expression at D05 relative to Naive within the macrophage population. 
 
 ### Pathway Enrichment in D05 Macrophages
 
