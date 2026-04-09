@@ -1,6 +1,3 @@
-# 6110A4
-scRNA-seq
-
 # Transcriptional Response of Nasal Mucosal Macrophages to Influenza A Virus Infection: A Single-Cell RNA-seq Analysis
 Arwa Sheheryar  
 BINF6110 – Assignment 4
