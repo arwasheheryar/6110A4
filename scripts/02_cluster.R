@@ -1,7 +1,7 @@
 library(Seurat)
 library(ggplot2)
 
-seurat_obj <- readRDS("../data/seurat_ass4.rds")
+seurat_obj <- readRDS("data/seurat_ass4.rds")
 seurat_obj[["percent.mt"]] <- PercentageFeatureSet(seurat_obj, pattern = "^mt-")
 seurat_obj <- subset(seurat_obj, subset = nFeature_RNA > 200 & percent.mt < 10)
 seurat_obj <- NormalizeData(seurat_obj, normalization.method = "LogNormalize")
@@ -18,6 +18,6 @@ seurat_obj <- RunUMAP(seurat_obj, dims = 1:20)
 DimPlot(seurat_obj, reduction = "umap", label = TRUE)
 
 # Check for batch effects: do cells cluster by timepoint or tissue instead of cell type?
-# If yes, integration will be needed (lecture 17/18)
+# If yes, integration will be needed
 DimPlot(seurat_obj, reduction = "umap", group.by = "time")
 DimPlot(seurat_obj, reduction = "umap", group.by = "organ_custom")
