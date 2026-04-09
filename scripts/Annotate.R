@@ -69,4 +69,3 @@ p_annotated_legend <- DimPlot(seurat_obj, reduction = "umap",
                               label = FALSE, raster = FALSE)
 ggsave("results/figures/umap_annotated_legend.png", p_annotated_legend, width = 18, height = 10)
 
-message("Annotation complete. Figures saved.")

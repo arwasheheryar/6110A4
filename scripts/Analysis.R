@@ -2,7 +2,6 @@ library(Seurat)
 library(ggplot2)
 library(dplyr)
 
-setwd("~/Desktop/6110A4")
 
 # ============================================================
 # 1. LOAD DATA
@@ -70,3 +69,34 @@ FeaturePlot(seurat_obj, features = c("Epcam", "Pecam1", "Col1a1", "Acta2"))
 
 # Olfactory-specific
 FeaturePlot(seurat_obj, features = c("Omp", "Gap43", "Sox2", "Ascl1"))
+
+# Run this immediately after analysis.R while seurat_obj is still in memory
+# Saves all figures to results/figures/
+
+library(Seurat)
+library(ggplot2)
+
+# ============================================================
+# UMAP FIGURES
+# ============================================================
+p1 <- DimPlot(seurat_obj, reduction = "umap", label = TRUE, raster = FALSE)
+ggsave("results/figures/umap_clusters.png", p1, width = 12, height = 8)
+
+p2 <- DimPlot(seurat_obj, reduction = "umap", group.by = "time", raster = FALSE)
+ggsave("results/figures/umap_time.png", p2, width = 10, height = 8)
+
+p3 <- DimPlot(seurat_obj, reduction = "umap", group.by = "organ_custom", raster = FALSE)
+ggsave("results/figures/umap_organ.png", p3, width = 10, height = 8)
+
+# ============================================================
+# FEATURE PLOTS
+# ============================================================
+p4 <- FeaturePlot(seurat_obj, features = c("Ptprc", "Cd3e", "Cd19", "Lyz2"), raster = FALSE)
+ggsave("results/figures/featureplot_immune.png", p4, width = 12, height = 10)
+
+p5 <- FeaturePlot(seurat_obj, features = c("Epcam", "Pecam1", "Col1a1", "Acta2"), raster = FALSE)
+ggsave("results/figures/featureplot_structural.png", p5, width = 12, height = 10)
+
+p6 <- FeaturePlot(seurat_obj, features = c("Omp", "Gap43", "Sox2", "Ascl1"), raster = FALSE)
+ggsave("results/figures/featureplot_olfactory.png", p6, width = 12, height = 10)
+
