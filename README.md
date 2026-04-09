@@ -23,7 +23,7 @@ This study reanalyses publicly available single-cell RNA-seq data from Kazer et 
 
 ### Data Loading and Inspection
 
-A pre-built Seurat object containing scRNA-seq data from Bai et al. (2024) was loaded directly into R v4.5.1 using `readRDS()`. The object comprised 156,572 cells across 25,129 features. Metadata columns encoding tissue type (`organ_custom`: OM, RM, LNG), timepoint (`time`: Naive, D02, D05, D08, D14), individual mouse identity (`mouse_id`; n=3 per group), and combined sample identity (`biosample_id`) were confirmed prior to analysis. All analysis was performed in R v4.5.1 using Seurat v5.
+A pre-built Seurat object containing scRNA-seq data from Kazer et al. (2024) was loaded directly into R v4.5.1 using `readRDS()`. The object comprised 156,572 cells across 25,129 features. Metadata columns encoding tissue type (`organ_custom`: OM, RM, LNG), timepoint (`time`: Naive, D02, D05, D08, D14), individual mouse identity (`mouse_id`; n=3 per group), and combined sample identity (`biosample_id`) were confirmed prior to analysis. All analysis was performed in R v4.5.1 using Seurat v5.
 
 ### Quality Control and Filtering
 
