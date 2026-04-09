@@ -21,8 +21,8 @@ Idents(seurat_obj) <- "celltype.time"
 # ============================================================
 
 # Subset to just macrophages first to save memory
-mac <- subset(seurat_obj, idents = c("Microglia/Macrophages_Naive", 
-                                     "Microglia/Macrophages_D05"))
+mac <- subset(seurat_obj, idents = c("Microglia/Macrophages-Naive", 
+                                     "Microglia/Macrophages-D05"))
 
 # Reset idents to annotated cell type for aggregation
 Idents(mac) <- "celltype.time"
@@ -69,10 +69,6 @@ top.down <- mac.de %>%
   slice_min(avg_log2FC, n = 4) %>%
   rownames()
 
-# Restore original idents with cell type + time for violin plots
-seurat_obj$celltype.time <- paste(Idents(seurat_obj), seurat_obj$time, sep = "_")
-Idents(seurat_obj) <- "celltype.time"
-
 # Violin plots of top upregulated genes in macrophages
 p_vln <- VlnPlot(seurat_obj, 
                  features = top.up,
@@ -80,6 +76,11 @@ p_vln <- VlnPlot(seurat_obj,
                             "Microglia/Macrophages_D05"),
                  group.by = "time",
                  ncol = 2)
+# Restore original idents with cell type + time for violin plots
+seurat_obj$celltype.time <- paste(Idents(seurat_obj), seurat_obj$time, sep = "_")
+Idents(seurat_obj) <- "celltype.time"
+
+
 
 ggsave("results/figures/DE_macrophages_violin_up.png", p_vln, width = 12, height = 8)
 
