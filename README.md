@@ -158,17 +158,25 @@ Overall, this analysis demonstrates that nasal mucosal macrophages are transcrip
 
 ## References
 
-Kazer, S. W., Matysiak Match, C., Langan, E. M., et al. (2024). Primary nasal influenza infection rewires tissue-scale memory response dynamics. Immunity, 57(8), 1955–1974. https://doi.org/10.1016/j.immuni.2024.06.005
+Aran, D., Looney, A. P., Liu, L., et al. (2019). Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage. *Nature Immunology*, 20(2), 163–172. https://doi.org/10.1038/s41590-018-0276-y
+
+Finak, G., McDavid, A., Yajima, M., et al. (2015). MAST: a flexible statistical framework for assessing transcriptional changes and characterizing heterogeneity in single-cell RNA sequencing data. *Genome Biology*, 16, 278. https://doi.org/10.1186/s13059-015-0844-5
 
 Gizzi, A. S., Grove, T. L., Arnold, J. J., et al. (2018). A naturally occurring antiviral ribonucleotide encoded by the human genome. *Nature*, 558(7711), 610–614. https://doi.org/10.1038/s41586-018-0238-4
 
 Guo, X. J., & Thomas, P. G. (2020). New fronts emerge in the influenza cytokine storm. *Seminars in Immunopathology*, 42(1), 57–73. https://doi.org/10.1007/s00281-019-00764-3
 
+Hafemeister, C., & Satija, R. (2019). Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression. *Genome Biology*, 20, 296. https://doi.org/10.1186/s13059-019-1874-1
+
 Heumos, L., Schaar, A. C., Lance, C., et al. (2023). Best practices for single-cell analysis across modalities. *Nature Reviews Genetics*, 24(8), 550–572. https://doi.org/10.1038/s41576-023-00586-w
 
 Iwasaki, A., & Pillai, P. S. (2014). Innate immunity to influenza virus infection. *Nature Reviews Immunology*, 14(5), 315–328. https://doi.org/10.1038/nri3665
 
+Kazer, S. W., Matysiak Match, C., Langan, E. M., et al. (2024). Primary nasal influenza infection rewires tissue-scale memory response dynamics. *Immunity*, 57(8), 1955–1974. https://doi.org/10.1016/j.immuni.2024.06.005
+
 Kang, H. M., Subramaniam, M., Targ, S., et al. (2018). Multiplexed droplet single-cell RNA-sequencing using natural genetic variation. *Nature Biotechnology*, 36(1), 89–94. https://doi.org/10.1038/nbt.4042
+
+Korsunsky, I., Millard, N., Fan, J., et al. (2019). Fast, sensitive and accurate integration of single-cell data with Harmony. *Nature Methods*, 16(12), 1289–1296. https://doi.org/10.1038/s41592-019-0619-0
 
 Love, M. I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology*, 15(12), 550. https://doi.org/10.1186/s13059-014-0550-8
 
@@ -181,6 +189,8 @@ Reimand, J., Isserlin, R., Voisin, V., et al. (2019). Pathway enrichment analysi
 Squair, J. W., Gautier, M., Kathe, C., et al. (2021). Confronting false discoveries in single-cell differential expression. *Nature Communications*, 12, 5692. https://doi.org/10.1038/s41467-021-25960-2
 
 Stuart, T., Butler, A., Hoffman, P., et al. (2019). Comprehensive integration of single-cell data. *Cell*, 177(7), 1888–1902. https://doi.org/10.1016/j.cell.2019.05.031
+
+Subramanian, A., Tamayo, P., Mootha, V. K., et al. (2005). Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. *Proceedings of the National Academy of Sciences*, 102(43), 15545–15550. https://doi.org/10.1073/pnas.0506580102
 
 Thapa, R. J., Ingber, J., Shapiro, B., et al. (2016). DAI senses influenza A virus genomic RNA and activates RIPK3-dependent cell death. *Cell Host & Microbe*, 20(5), 674–681. https://doi.org/10.1016/j.chom.2016.09.014
 
